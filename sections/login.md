@@ -1,9 +1,3 @@
-Login
-====================
-
-* [Login contact](#login-contact)
-
-
 Login contact
 ----------------
 
