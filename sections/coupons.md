@@ -79,5 +79,5 @@ Get coupon
         "coupon_code":"A4ASDF4ASDF",
         "created_at":"2013-12-07T06:35:11+00:00",
         "updated_at":"2013-12-07T06:35:11+00:00"
-},
+}
 ```
