@@ -17,7 +17,7 @@ Verify contact
 
 ```json
 {
-    "type":"phone",
+    	"type":"phone",
 	"phone":"8888888",
 	"otp":"7wbX4d",
 }
@@ -75,8 +75,7 @@ Create contact
 	"phone":"89562300",
 	"designation":"Manager",
 	"income":null,
-	"created_at":"2013-12-07T06:35:11+00:00",
-	"modified_at":"2013-12-07T06:35:11+00:00"
+	"tags":["tags","tags1","tags2"]
 }
 ```
 
@@ -103,8 +102,7 @@ Update contact
 	"phone":"89562300",
 	"designation":"Manager",
 	"income":null,
-	"created_at":"2013-12-07T06:35:11+00:00",
-	"modified_at":"2013-12-07T06:35:11+00:00"
+	"tags":["tags","tags1","tags2"]
 }
 ```
 `200 OK` will be returned along with the JSON of the contact ([Get contact](#get-contact)) if the record is updated. `403 Forbidden` will be returned in case of invalid access.
