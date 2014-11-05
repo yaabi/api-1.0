@@ -41,7 +41,7 @@ Get  contact
 	"first_name":"Chris",
 	"last_name":"Wagley",
 	"gender":"Male",
-	"date_of_birth":null,
+	"date_of_birth":"1990-12-27",
 	"relationship_status":"Single",
 	"address":"#1,address",
 	"city":"City",
@@ -66,7 +66,7 @@ Create contact
 	"first_name":"Chris",
 	"last_name":"Wagley",
 	"gender":"Male",
-	"date_of_birth":null,
+	"date_of_birth":"1990-12-27",
 	"relationship_status":"Single",
 	"address":"#1,address",
 	"city":"City",
@@ -76,7 +76,7 @@ Create contact
 	"phone":"89562300",
 	"designation":"Manager",
 	"income":null,
-	tags":["tag1","tag2","tag3"]
+	"tags":["tag1","tag2","tag3"]
 }
 ```
 
@@ -103,7 +103,7 @@ Update contact
 	"phone":"89562300",
 	"designation":"Manager",
 	"income":null,
-	tags":["tag1","tag2","tag3"]
+	"tags":["tag1","tag2","tag3"]
 }
 ```
 `200 OK` will be returned along with the JSON of the contact ([Get contact](#get-contact)) if the record is updated. `403 Forbidden` will be returned in case of invalid access.
@@ -116,7 +116,7 @@ Add Tags
 
 ```json
 {
-	"tags":['tag1','tag2'],
+	"tags":["tag1","tag2"],
 }
 ```
 `200 OK` will be returned if the record is updated. `403 Forbidden` will be returned in case of invalid access.
