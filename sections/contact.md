@@ -51,7 +51,7 @@ Get  contact
 	"phone":"89562300",
 	"designation":"Manager",
 	"income":null,
-	"tags":["tag1","tag2","tag3"]
+	"tags":["tag1","tag2","tag3"],
 	"created_at":"2013-12-07T06:35:11+00:00",
 	"modified_at":"2013-12-07T06:35:11+00:00"
 }
