@@ -17,7 +17,7 @@ Verify contact
 
 ```json
 {
-    	"type":"phone",
+	"type":"phone",
 	"phone":"8888888",
 	"otp":"7wbX4d",
 }
