@@ -51,6 +51,7 @@ Get  contact
 	"phone":"89562300",
 	"designation":"Manager",
 	"income":null,
+	tags":["tag1","tag2","tag3"]
 	"created_at":"2013-12-07T06:35:11+00:00",
 	"modified_at":"2013-12-07T06:35:11+00:00"
 }
@@ -75,7 +76,7 @@ Create contact
 	"phone":"89562300",
 	"designation":"Manager",
 	"income":null,
-	"tags":["tags","tags1","tags2"]
+	tags":["tag1","tag2","tag3"]
 }
 ```
 
@@ -102,7 +103,7 @@ Update contact
 	"phone":"89562300",
 	"designation":"Manager",
 	"income":null,
-	"tags":["tags","tags1","tags2"]
+	tags":["tag1","tag2","tag3"]
 }
 ```
 `200 OK` will be returned along with the JSON of the contact ([Get contact](#get-contact)) if the record is updated. `403 Forbidden` will be returned in case of invalid access.
