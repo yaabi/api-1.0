@@ -1,45 +1,40 @@
-YAABI API
-====================
-This RESTful API is an interface to the resources in YAABI e.g. contacts, coupons etc. 
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-If you are new to REST, you can understand the basics at http://en.wikipedia.org/wiki/REST. This API accepts and returns JSON format.
+## Getting Started
 
-API key
-----------------
-With every request you'll need to pass the YAABI account's API key.
+First, run the development server:
 
-Making a request
-----------------
-All URLs (Base url) start with `http://api.yaabi.no/v1/`. You'll also need to include the `Content-Type` header and `User-Agent` to identify your app with every request.
-
-**Here is a curl based example:**
-
-```shell
-curl -H 'API-KEY: YOUR API KEY' -H 'User-Agent: AppName (name@example.com)' http://api.yaabi.no/v1/contact/
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-API endpoints
-----------------
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-* [Login](https://github.com/yaabi/api/blob/master/sections/login.md)
-* [Contact](https://github.com/yaabi/api/blob/master/sections/contact.md)
-* [Coupons](https://github.com/yaabi/api/blob/master/sections/coupons.md)
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-Things to remember
-----------------
-* **JSON Format**
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-  We support JSON for receiving and sending the data.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-* **Identify your app**
+## Learn More
 
-  You must include the `User-Agent: AppName (name@example.com)` header with every request. If this header is not supplied, request will be returned with `400` response. 
+To learn more about Next.js, take a look at the following resources:
 
-* **Rate Limits**
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-  API calls are subject to rate limiting. Exceeding any rate limits will result in requests returning a status code of 429 (Too Many Requests). Rate limits are 100 requests per 10 second for the same account from the same IP.
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-* **Handling errors**
+## Deploy on Vercel
 
-  Error codes 500 Internal Server Error, 502 Bad Gateway, 503 Service Unavailable, or 504 Gateway Timeout means an has occured at our end. Re-trying in some time should solve the problem.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
